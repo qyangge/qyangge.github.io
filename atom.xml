@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>浅碧个人博客</title>
+  <icon>https://www.gravatar.com/avatar/9412c55286b816eb028b1848e5956008</icon>
+  
+  <link href="atom.xml" rel="self"/>
+  
+  <link href="localhost:4000/"/>
+  <updated>2020-08-31T11:40:33.000Z</updated>
+  <id>localhost:4000/</id>
+  
+  <author>
+    <name>浅碧</name>
+    <email>2102980693@qq.com</email>
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>超实用的SQL语句之嵌套查询</title>
+    <link href="posts/f3908263"/>
+    <id>posts/f3908263</id>
+    <published>2020-08-31T11:40:33.000Z</published>
+    <updated>2020-08-31T11:40:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2>嵌套查询</h2><h3>什么是嵌套查询</h3>. 　　嵌套查询的意思是，一个查询语句(select-from-where)查询语句块可以嵌套在另外一个查询块的where子句中，称为嵌套查询。其中外层查询也称为父查询，主查询。内层查询也称子查询，从查询。<h3>嵌套查询的工作方式</h3> 　　先处理内查询，由内向外处理，外层查询利用内层查询的结果嵌套查询不仅仅可以用于父查询select语句使用。还可以用于insert、update、delete语句或其他子查询中。<h2>子查询的组成</h2> 1、包含标准选择列表组件的标准select查询。<p> 2、包含一个或多个表或者视图名称的标准from子句。</p><p> 3、可选的where子句。</p><p> 4、可选的group by子句。</p><p> 5、可选的having子句。</p><h2>子查询的语法规则</h2> 1、子查询的select查询总是使用圆括号括起来。<p> 2、不能包括compute或for.browse子句。</p><p> 3、如果同时指定top子句，则可能只包括order by子句。</p><p> 4、子查询最多可以嵌套到32层。个别查询可能会不支持32层嵌套。</p><p> 5、任何可以使用表达式的地方都可以使用子查询，只要它返回的是单个值。</p><p> 6、如果某个表只出现在子查询中二不出现在外部查询中，那么该表的列就无法包含在输出中。</p><h2>简单子查询</h2><strong>示例：</strong><pre><code>select name,age from person where age &gt;     (        select age from person         where name = &apos;孙权&apos;    )</code></pre><p><strong>输出结果为：</strong><br><img src= "/img/loading1.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/glassy-sky-lisong/StaticFile1@master/post/4.jpg" alt="1"></p><h2>in嵌套查询</h2> 　　in关键字用于where子句中用来判断查询的表达式是否在多个值的列表中。返回满足in列表中的满足条件的记录。<p><strong>示例：</strong></p><pre><code>select name from person where countryid in (select countryid from countrywhere countryname = &apos;魏国&apos;)</code></pre><p><strong>输出结果为：</strong></p><img src= "/img/loading1.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/glassy-sky-lisong/StaticFile1@master/post/3.jpg" alt="2"><h2>some嵌套查询</h2><h3>语法</h3> 　　some在sql中的逻辑运算符号，如果在一系列比较中，有些值为True，那么结果就为True。some的语法是：<pre><code>&lt;表达式&gt;{ =|&lt;&gt;|!=|&gt;|&gt;=|!&gt;|&lt;|&lt;=|!&lt;}some(子查询)</code></pre><p><strong>示例：</strong></p><pre><code>select name from person where countryid = some 　　　　　　--用等号和以下查询到的值比较，如果与其中一个相等，就返回(select countryid from countrywhere countryname = &apos;魏国&apos;)</code></pre><p><strong>输出结果为：</strong><br><img src= "/img/loading1.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/glassy-sky-lisong/StaticFile1@master/post/2.jpg" alt="3"></p><h2>all嵌套查询</h2> 　　all是sql中的逻辑运算符好，如果一系列的比较都为true，那么结果才能为true。<h3>语法</h3><pre><code>&lt;表达式&gt;{ =|&lt;&gt;|!=|&gt;|&gt;=|!&gt;|&lt;|&lt;=|!&lt;}all(子查询)</code></pre><p><strong>示例：</strong></p><pre><code>select name from person where countryid &gt; all　　 --当countryid大于以下返回的所有id，此结果才为True，此结果才返回(select countryid from countrywhere countryname = &apos;魏国&apos;)</code></pre><p><strong>输出结果为：</strong><br><img src= "/img/loading1.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/glassy-sky-lisong/StaticFile1@master/post/1.jpg" alt="4"></p><h2>exists嵌套查询</h2><h3>语法</h3> 　　exists是sql中的逻辑运算符号。如果子查询有结果集返回，那么就为True。exists代表“存在”的意义，它只查找满足条件的那些记录。<span style="color:red">一旦找到第一个匹配的记录后，就马上停止查找。</span><pre><code>exists　子查询</code></pre><p> 　　其中子查询是一个首先的select语句，不允许有compute子句和into关键字。<br>exists 的意思是，子查询是否有结果集返回。<br><strong>例如：</strong></p><pre><code>SELECT * FROM PersonWHERE exists(SELECT 1      --SELECT 0  SELECT NULL 返回结果都一样，因为这三个子查询都有结果集返回，因此总是True  SELECT * FROM Person照常执行)</code></pre><p> 　　但是如果子查询中因为加了条件而没有结果集返回，则主语句就不执行了：</p><pre><code>SELECT * FROM PersonWHERE exists(SELECT * FROM Person WHERE Person_Id = 100    --如果不存在Person_Id的记录，则子查询没有结果集返回，主语句不执行)</code></pre><p>最后感谢<a href="https://www.cnblogs.com/kissdodog/archive/2013/06/03/3116284.html" target="_blank" rel="noopener">不玩博客了！</a>同学的分享，么么哒！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="博客园博文" scheme="categories/博客园博文/"/>
+    
+    <category term="mybatis" scheme="categories/博客园博文/mybatis/"/>
+    
+    
+    <category term="MySQL" scheme="tags/MySQL/"/>
+    
+    <category term="MyBatis" scheme="tags/MyBatis/"/>
+    
+    <category term="SQL技巧" scheme="tags/SQL技巧/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客美化——Silence主题皮肤</title>
+    <link href="posts/3ba53770"/>
+    <id>posts/3ba53770</id>
+    <published>2020-08-30T12:08:31.000Z</published>
+    <updated>2020-08-30T12:08:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>&emsp;&emsp;一款专注阅读的博客园主题，主要面向于经常混迹 博客园 的朋友。其追求大道至简的终极真理，界面追求简洁、运行追求高效、部署追求简单。</p><ul><li><a href="https://github.com/glassy-sky-lisong/SilenceSkin" target="_blank" rel="noopener">博客皮肤源码地址</a></li><li><a href="https://www.cnblogs.com/esofar" target="_blank" rel="noopener">预览地址</a></li><li><a href="https://github.com/esofar/cnblogs-theme-silence/blob/master/docs/deploy.md" target="_blank" rel="noopener">如何部署、使用皮肤</a></li><li><a href="https://www.cnblogs.com/esofar/p/cnblogs-theme-silence.html" target="_blank" rel="noopener">Silence作者的友链</a></li></ul><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ul><li>简洁优雅、精致漂亮的 UI 设计</li><li>提供多种风格主题以便适应各类用户的偏好</li><li>响应式设计，兼容手机端浏览器</li><li>提供事无巨细的部署文档</li><li>源码结构清晰并且注释完整，方便扩展</li></ul><h2 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h2><p>&emsp;&emsp;请先确保您正在使用的机器已经安装 Node.js 和 Git 客户端。</p><pre><code>git clone https://github.com/esofar/cnblogs-theme-silence.git   # 克隆源码cd cnblogs-theme-silence                                        # 进入项目npm install                                                     # 安装依赖npm run build</code></pre><p>&emsp;&emsp;如果没有安装node。js或者不会使用的童鞋可以在我的GitHub，也就是博客皮肤源码地址中。</p><h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>&emsp;&emsp;重点部署之前使用博客园的cutorm皮肤，具体部署细节请详见’如何部署、使用皮肤’，如果又不会的话可以看一看我的配置作为参考（仅作为参考，找不回来别哭鼻子）<br><strong><em>CSS</em></strong></p><pre><code>&lt;!-- 溢出隐藏设置（放置在管理--&gt; 设置--&gt; css模块中） --&gt;#topics, #mainContent {    overflow: visible;}.cnblogs-markdown .hljs{    display:block;    color:#333;    overflow-x:auto;    background:#F2F4F5!important;    border:none!important;    font-family:Consolas,Monaco,&apos;Andale Mono&apos;,&apos;Ubuntu Mono&apos;,monospace!important;    padding:1em!important;    font-size:14px!important    }</code></pre><p><strong><em>侧边栏公告</em></strong></p><pre><code>&lt;!-- 在管理--&gt; 设置-&gt; 侧边栏公告(支持js代码、支持html代码) --&gt;&lt;script src=&quot;https://blog-static.cnblogs.com/files/glassysky/silence.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;    $.silence({        profile: {            enable: true,            avatar: &apos;https://gitee.com/glassyskyforgame/glassysky/blob/master/4c67d1a20cf431ade2873e284836acaf2fdd989e.jpg&apos;,            favicon: &apos;https://gitee.com/glassyskyforgame/glassysky/raw/master/4c67d1a20cf431ade2873e284836acaf2fdd989e.jpg&apos;,        },        catalog: {            enable: true,            move: true,            index: true,            level1: &apos;h2&apos;,            level2: &apos;h3&apos;,            level3: &apos;h4&apos;,        },        signature: {            enable: true,            home: &apos;https://www.cnblogs.com/glassysky/&apos;,            license: &apos;署名 4.0 国际&apos;,            link: &apos;https://creativecommons.org/licenses/by/4.0&apos;        },        reward: {            enable: true,            title: &apos;感谢小可爱投食&apos;,            wechat: &apos;https://images.cnblogs.com/cnblogs_com/esofar/972540/o_wechat.png&apos;,            alipay: &apos;https://images.cnblogs.com/cnblogs_com/esofar/972540/o_alipay.png&apos;        },        github: {            enable: true,            color: &apos;#fff&apos;,            fill: null,            link: &apos;https://github.com/glassy-sky-lisong&apos;        }    });&lt;/script&gt;&lt;!--外置主题css补丁--&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://blog-static.cnblogs.com/files/glassysky/sli.css&quot;/&gt;</code></pre><p><strong><em>会动的title</em></strong></p><pre><code>&lt;!-- 动态titlejs --&gt;&lt;script&gt; var OriginTitle = document.title; var titleTime; document.addEventListener(&apos;visibilitychange&apos;, function () { if                 (document.hidden) { document.title = &apos;╭(°A°`)╮ 页面崩溃啦 ~&apos;; clearTimeout(titleTime); } else { document.title = &apos;(ฅ&gt;ω&lt;*ฅ) 噫又    好了~&apos; + OriginTitle; titleTime = setTimeout(function () { document.title = OriginTitle; }, 2000); } }); &lt;/script&gt;</code></pre><p><strong><em>图片放大功能</em></strong></p><pre><code>&lt;!--图片放大的zoomcss和js--&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://blog-static.cnblogs.com/files/glassysky/zoom.css&quot;/&gt;&lt;script src=&quot;https://blog-static.cnblogs.com/files/glassysky/zoom.js&quot;&gt;&lt;/script&gt;&lt;!-- Bootstrap 的 transition.js cdn（过渡动画插件）--&gt;&lt;script type=&quot;text/javascript&quot;&gt;$(&apos;#cnblogs_post_body img&apos;).attr(&apos;data-action&apos;, &apos;zoom&apos;);&lt;/script&gt;</code></pre><h2 id="博客的皮肤风格"><a href="#博客的皮肤风格" class="headerlink" title="博客的皮肤风格"></a>博客的皮肤风格</h2><ul><li>简约·蓝<br><img src= "/img/loading1.gif" data-lazy-src="https://github.com/esofar/cnblogs-theme-silence/raw/master/docs/theme_default.png" alt="img1"> </li><li>暗黑·绿<br><img src= "/img/loading1.gif" data-lazy-src="https://github.com/esofar/cnblogs-theme-silence/raw/master/docs/theme_dark.png" alt="img2"></li><li>女神·粉<br><img src= "/img/loading1.gif" data-lazy-src="https://github.com/esofar/cnblogs-theme-silence/raw/master/docs/theme_goddess.png" alt="img3">  </li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="博客园博文" scheme="categories/博客园博文/"/>
+    
+    <category term="博客美化" scheme="categories/博客园博文/博客美化/"/>
+    
+    
+    <category term="博客园" scheme="tags/博客园/"/>
+    
+    <category term="博客美化" scheme="tags/博客美化/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试分类</title>
+    <link href="posts/a1da6445"/>
+    <id>posts/a1da6445</id>
+    <published>2020-08-25T04:50:00.000Z</published>
+    <updated>2020-08-25T04:50:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是一个测试</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="Hexo" scheme="categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo-admin插件使用</title>
+    <link href="posts/f84657b8"/>
+    <id>posts/f84657b8</id>
+    <published>2020-07-26T04:53:00.000Z</published>
+    <updated>2020-07-26T04:53:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="1-下载依赖包"><a href="#1-下载依赖包" class="headerlink" title="1.下载依赖包"></a>1.下载依赖包</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-admin</span><br></pre></td></tr></table></figure><h2 id="2-启动hexo服务"><a href="#2-启动hexo服务" class="headerlink" title="2.启动hexo服务"></a>2.启动hexo服务</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm server -d</span><br></pre></td></tr></table></figure><h2 id="3-修改用户名、密码"><a href="#3-修改用户名、密码" class="headerlink" title="3.修改用户名、密码"></a>3.修改用户名、密码</h2><p>  在Hexo博客控制台页面-&gt;设置-&gt;用户名、密码一一填写，填写完毕后将页面最下面的config.yaml配置一键复制、粘贴，重启后即可生效</p>    <div id="aplayer-CXEhZzri" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="621465725" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86" data-listfolded="true" data-fixed="true" data-mini="true"    ></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="Hexo" scheme="categories/Hexo/"/>
+    
+    <category term="Admin" scheme="categories/Hexo/Admin/"/>
+    
+    
+    <category term="Hexo" scheme="tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
