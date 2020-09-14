@@ -2,77 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>video/index.html</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/video/index.html</loc>
     
     <lastmod>2020-09-13</lastmod>
     
   </url>
   
   <url>
-    <loc>photo/index.html</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/photo/index.html</loc>
     
     <lastmod>2020-09-13</lastmod>
     
   </url>
   
   <url>
-    <loc>music/index.html</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/music/index.html</loc>
     
     <lastmod>2020-09-13</lastmod>
     
   </url>
   
   <url>
-    <loc>bbs/index.html</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/bbs/index.html</loc>
     
     <lastmod>2020-09-13</lastmod>
     
   </url>
   
   <url>
-    <loc>posts/f3908263</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/posts/f3908263</loc>
     
     <lastmod>2020-08-31</lastmod>
     
   </url>
   
   <url>
-    <loc>posts/3ba53770</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/posts/3ba53770</loc>
     
     <lastmod>2020-08-30</lastmod>
     
   </url>
   
   <url>
-    <loc>about/index.html</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/about/index.html</loc>
     
     <lastmod>2020-07-25</lastmod>
     
   </url>
   
   <url>
-    <loc>shuoshuo/index.html</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/shuoshuo/index.html</loc>
     
     <lastmod>2020-07-25</lastmod>
     
   </url>
   
   <url>
-    <loc>link/index.html</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/link/index.html</loc>
     
     <lastmod>2020-07-25</lastmod>
     
   </url>
   
   <url>
-    <loc>categories/index.html</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/categories/index.html</loc>
     
     <lastmod>2020-07-25</lastmod>
     
   </url>
   
   <url>
-    <loc>tags/index.html</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/tags/index.html</loc>
     
     <lastmod>2020-07-25</lastmod>
     
@@ -80,7 +80,7 @@
   
 
   <url>
-    <loc>localhost:4000</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io</loc>
     <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -88,35 +88,35 @@
 
   
   <url>
-    <loc>tags/%E5%8D%9A%E5%AE%A2%E5%9B%AD/</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/tags/%E5%8D%9A%E5%AE%A2%E5%9B%AD/</loc>
     <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</loc>
     <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>tags/MySQL/</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/tags/MySQL/</loc>
     <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>tags/MyBatis/</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/tags/MyBatis/</loc>
     <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>tags/SQL%E6%8A%80%E5%B7%A7/</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/tags/SQL%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -125,21 +125,21 @@
 
   
   <url>
-    <loc>categories/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E5%8D%9A%E6%96%87/</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/categories/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E5%8D%9A%E6%96%87/</loc>
     <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>categories/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E5%8D%9A%E6%96%87/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/categories/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E5%8D%9A%E6%96%87/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</loc>
     <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>categories/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E5%8D%9A%E6%96%87/mybatis/</loc>
+    <loc>http://jenneybrother.gitee.io/qyangge.github.io/categories/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E5%8D%9A%E6%96%87/mybatis/</loc>
     <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

@@ -3,11 +3,11 @@
   <title>浅碧个人博客</title>
   <icon>https://www.gravatar.com/avatar/9412c55286b816eb028b1848e5956008</icon>
   <subtitle>浅碧个人博客</subtitle>
-  <link href="atom.xml" rel="self"/>
+  <link href="http://jenneybrother.gitee.io/qyangge.github.io/atom.xml" rel="self"/>
   
-  <link href="localhost:4000/"/>
+  <link href="http://jenneybrother.gitee.io/qyangge.github.io/"/>
   <updated>2020-08-31T11:40:33.000Z</updated>
-  <id>localhost:4000/</id>
+  <id>http://jenneybrother.gitee.io/qyangge.github.io/</id>
   
   <author>
     <name>浅碧</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>超实用的SQL语句之嵌套查询</title>
-    <link href="posts/f3908263"/>
-    <id>posts/f3908263</id>
+    <link href="http://jenneybrother.gitee.io/qyangge.github.io/posts/f3908263"/>
+    <id>http://jenneybrother.gitee.io/qyangge.github.io/posts/f3908263</id>
     <published>2020-08-31T11:40:33.000Z</published>
     <updated>2020-08-31T11:40:33.000Z</updated>
     
@@ -33,23 +33,23 @@
     
     
     
-    <category term="博客园博文" scheme="categories/博客园博文/"/>
+    <category term="博客园博文" scheme="http://jenneybrother.gitee.io/qyangge.github.io/categories/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E5%8D%9A%E6%96%87/"/>
     
-    <category term="mybatis" scheme="categories/博客园博文/mybatis/"/>
+    <category term="mybatis" scheme="http://jenneybrother.gitee.io/qyangge.github.io/categories/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E5%8D%9A%E6%96%87/mybatis/"/>
     
     
-    <category term="MySQL" scheme="tags/MySQL/"/>
+    <category term="MySQL" scheme="http://jenneybrother.gitee.io/qyangge.github.io/tags/MySQL/"/>
     
-    <category term="MyBatis" scheme="tags/MyBatis/"/>
+    <category term="MyBatis" scheme="http://jenneybrother.gitee.io/qyangge.github.io/tags/MyBatis/"/>
     
-    <category term="SQL技巧" scheme="tags/SQL技巧/"/>
+    <category term="SQL技巧" scheme="http://jenneybrother.gitee.io/qyangge.github.io/tags/SQL%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   
   <entry>
     <title>博客美化——Silence主题皮肤</title>
-    <link href="posts/3ba53770"/>
-    <id>posts/3ba53770</id>
+    <link href="http://jenneybrother.gitee.io/qyangge.github.io/posts/3ba53770"/>
+    <id>http://jenneybrother.gitee.io/qyangge.github.io/posts/3ba53770</id>
     <published>2020-08-30T12:08:31.000Z</published>
     <updated>2020-08-30T12:08:31.000Z</updated>
     
@@ -63,14 +63,14 @@
     
     
     
-    <category term="博客园博文" scheme="categories/博客园博文/"/>
+    <category term="博客园博文" scheme="http://jenneybrother.gitee.io/qyangge.github.io/categories/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E5%8D%9A%E6%96%87/"/>
     
-    <category term="博客美化" scheme="categories/博客园博文/博客美化/"/>
+    <category term="博客美化" scheme="http://jenneybrother.gitee.io/qyangge.github.io/categories/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E5%8D%9A%E6%96%87/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
     
     
-    <category term="博客园" scheme="tags/博客园/"/>
+    <category term="博客园" scheme="http://jenneybrother.gitee.io/qyangge.github.io/tags/%E5%8D%9A%E5%AE%A2%E5%9B%AD/"/>
     
-    <category term="博客美化" scheme="tags/博客美化/"/>
+    <category term="博客美化" scheme="http://jenneybrother.gitee.io/qyangge.github.io/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
     
   </entry>
   
