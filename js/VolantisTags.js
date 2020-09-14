@@ -30,12 +30,12 @@ var titleTime;
 document.addEventListener('visibilitychange', function () {
   if (document.hidden) {
     $('[rel="icon"]').attr('href', "/funny.ico");
-    document.title = 'ヽ(●-`Д´-)ノ你要走嘛我好伤心！';
+    document.title = '赶紧滚😡！！！';
     clearTimeout(titleTime);
   }
   else {
     $('[rel="icon"]').attr('href', "/favicon.ico");
-    document.title = '(Ő∀Ő3)ノ哇喔！欢迎！' + OriginTitle;
+    document.title = '浅碧个人博客' + OriginTitle;
     titleTime = setTimeout(function () {
       document.title = OriginTitle;
     }, 2000);
