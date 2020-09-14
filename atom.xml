@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>浅碧个人博客</title>
   <icon>https://www.gravatar.com/avatar/9412c55286b816eb028b1848e5956008</icon>
-  
+  <subtitle>浅碧个人博客</subtitle>
   <link href="atom.xml" rel="self"/>
   
   <link href="localhost:4000/"/>

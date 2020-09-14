@@ -88,7 +88,7 @@
 
   <url>
     <loc>localhost:4000</loc>
-    <lastmod>2020-09-13</lastmod>
+    <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -96,35 +96,35 @@
   
   <url>
     <loc>tags/%E5%8D%9A%E5%AE%A2%E5%9B%AD/</loc>
-    <lastmod>2020-09-13</lastmod>
+    <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>tags/MySQL/</loc>
-    <lastmod>2020-09-13</lastmod>
+    <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>tags/MyBatis/</loc>
-    <lastmod>2020-09-13</lastmod>
+    <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>tags/SQL%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2020-09-13</lastmod>
+    <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</loc>
-    <lastmod>2020-09-13</lastmod>
+    <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -133,21 +133,21 @@
   
   <url>
     <loc>categories/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E5%8D%9A%E6%96%87/</loc>
-    <lastmod>2020-09-13</lastmod>
+    <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>categories/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E5%8D%9A%E6%96%87/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</loc>
-    <lastmod>2020-09-13</lastmod>
+    <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>categories/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E5%8D%9A%E6%96%87/mybatis/</loc>
-    <lastmod>2020-09-13</lastmod>
+    <lastmod>2020-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
