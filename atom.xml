@@ -3,11 +3,11 @@
   <title>浅碧个人博客</title>
   <icon>https://www.gravatar.com/avatar/9412c55286b816eb028b1848e5956008</icon>
   <subtitle>浅碧个人博客</subtitle>
-  <link href="http://jenneybrother.gitee.io/qyangge.github.io/atom.xml" rel="self"/>
+  <link href="atom.xml" rel="self"/>
   
-  <link href="http://jenneybrother.gitee.io/qyangge.github.io/"/>
+  <link href="localhost:4000/"/>
   <updated>2020-09-15T01:54:02.000Z</updated>
-  <id>http://jenneybrother.gitee.io/qyangge.github.io/</id>
+  <id>localhost:4000/</id>
   
   <author>
     <name>浅碧</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>hexo+github+gitee+自定义域名安装部署</title>
-    <link href="http://jenneybrother.gitee.io/qyangge.github.io/posts/8372d5ec"/>
-    <id>http://jenneybrother.gitee.io/qyangge.github.io/posts/8372d5ec</id>
+    <link href="posts/8372d5ec"/>
+    <id>posts/8372d5ec</id>
     <published>2020-09-15T01:54:02.000Z</published>
     <updated>2020-09-15T01:54:02.000Z</updated>
     

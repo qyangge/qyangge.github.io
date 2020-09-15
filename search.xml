@@ -5,8 +5,8 @@
     
     <entry>
       <title>hexo+github+gitee+自定义域名安装部署</title>
-      <link href="/qyangge.github.io/posts/8372d5ec"/>
-      <url>/qyangge.github.io/posts/8372d5ec</url>
+      <link href="/posts/8372d5ec"/>
+      <url>/posts/8372d5ec</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/qyangge.github.io/assets/css/APlayer.min.css"><script src="/qyangge.github.io/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/qyangge.github.io/assets/js/Meting.min.js"></script><p>1.先去github把hexo克隆到本地，(git部署和node安装就不讲了，网上一大推)</p><p>2.安装自己喜欢的主题next等等也是github直接克隆到hexo的跟目录的themes文件夹。</p><p>3.然后修改跟目录的_config.yml文件</p>]]></content>
       
