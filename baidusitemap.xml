@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>localhost:4000/posts/3610a686</loc>
+    <lastmod>2021-08-28</lastmod>
+  </url>
+  <url>
     <loc>localhost:4000/posts/4ad3c53</loc>
-    <lastmod>2020-09-02</lastmod>
+    <lastmod>2021-08-27</lastmod>
   </url>
 </urlset> 
